@@ -11,7 +11,7 @@ import UIKit
     
     private var originalImage: UIImage?
     
-    public override var image: UIImage? {
+    @IBInspectable public override var image: UIImage? {
         get {
             return originalImage
         }
