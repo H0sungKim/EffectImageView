@@ -34,8 +34,9 @@ extension UIImage {
         return renderer.image { context in
             let layer = CALayer()
             layer.contents = self.cgImage
+            layer.frame = CGRect(origin: .zero, size: size)
             let gradientLayer = CAGradientLayer()
-            gradientLayer.frame = CGRect(origin: CGPoint(x: 0, y: 0), size: size)
+            gradientLayer.frame = CGRect(origin: .zero, size: size)
             gradientLayer.colors = [
                 startColor.cgColor,
                 endColor.cgColor,
