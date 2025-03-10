@@ -15,7 +15,12 @@ import UIKit
         get {
             return image?
                 .withBlur(radius: blur)
-                .withGradient(startColor: startColor, endColor: endColor, startPoint: startPoint, endPoint: endPoint)
+                .withGradient(
+                    startColor: startColor,
+                    endColor: endColor,
+                    startPoint: startPoint,
+                    endPoint: endPoint
+                )
         }
     }
     
